@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Simple Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      color: #00698f;
+    }
+
+    h2 {
+      color: #008000;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    form {
+      width: 50%;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome to My Web Page</h1>
+  <p>This is a paragraph of text on my web page.</p>
+  <a href="https://www.google.com">Visit Google</a>
+
+
+
+  <!-- Lists -->
+  <h2>My Favorite Things</h2>
+  <ul>
+    <li>Item 1: Learn HTML</li>
+    <li>Item 2: Practice CSS</li>
+    <li>Item 3: Build a website</li>
+  </ul>
+  <ol>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+  </ol>
+  <dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+  </dl>
+
+  <!-- Tables -->
+  <h2>My Table</h2>
+  <table border="1">
+    <caption>
+      My Table Caption
+    </caption>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>25</td>
+        <td>New York</td>
+      </tr>
+      <tr>
+        <td>Jane</td>
+        <td>30</td>
+        <td>Los Angeles</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="3">Footer</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <!-- Forms -->
+  <h2>Get in Touch</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" /><br /><br />
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" /><br /><br />
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" /><br /><br />
+    <label for="message">Message:</label>
+    <textarea id="message" name="message"></textarea><br /><br />
+    <label for="subscribe">Subscribe to newsletter:</label>
+    <input type="checkbox" id="subscribe" name="subscribe" /><br /><br />
+    <label for="topic">Topic:</label>
+    <select id="topic" name="topic">
+      <option value="general">General Inquiry</option>
+      <option value="support">Support Request</option>
+      <option value="feedback">Feedback</option>
+    </select><br /><br />
+    <label for="contact-method">Preferred contact method:</label><br />
+    <input type="radio" id="email-contact" name="contact-method" value="email" />
+    <label for="email-contact">Email</label><br />
+    <input type="radio" id="phone-contact" name="contact-method" value="phone" />
+    <label for="phone-contact">Phone</label><br />
+    <input type="radio" id="both-contact" name="contact-method" value="both" />
+    <label for="both-contact">Both</label><br /><br />
+    <input type="submit" value="Submit" />
+    <input type="reset" value="Reset" />
+  </form>
+</body>
+
+</html>
