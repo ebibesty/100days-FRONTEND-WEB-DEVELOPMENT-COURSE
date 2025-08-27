@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Card Layout Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      padding: 40px;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px; /* space between cards */
+      flex-wrap: wrap; /* allow cards to wrap to next row */
+    }
+
+    .card {
+      width: 250px;
+      background: #ffffff;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;   /* inside spacing */
+      margin: 10px;    /* outside spacing */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .card p {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h2>Card Layout Example</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Card 1</h3>
+      <p>This is the content inside card one. Notice the padding inside and margin outside.</p>
+    </div>
+
+    <div class="card">
+      <h3>Card 2</h3>
+      <p>This card has a border, background color, and some shadow to make it stand out.</p>
+    </div>
+
+    <div class="card">
+      <h3>Card 3</h3>
+      <p>Cards automatically align side by side and wrap to the next row if space runs out.</p>
+    </div>
+  </div>
+</body>
+</html>

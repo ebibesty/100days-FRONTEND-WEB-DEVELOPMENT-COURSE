@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box-Sizing Demo</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .box {
+        /* box-sizing: border-box; */
+      width: 200px;
+      height: 100px;
+      padding: 20px;
+      border: 10px solid black;
+      background: lightblue;
+    }
+
+    /* Left box: default (content-box) */
+    .content-box {
+      box-sizing: content-box; /* default */
+    }
+
+    /* Right box: border-box */
+    .border-box {
+      box-sizing: border-box;
+      background: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <h2>Box-Sizing Comparison</h2>
+  <div class="container">
+    <div class="box content-box">
+      Content-Box<br>(Default)
+    </div>
+    <div class="box border-box">
+      Border-Box
+    </div>
+  </div>
+</body>
+</html>
